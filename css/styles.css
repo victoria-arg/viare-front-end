@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violeta-viare: #5b3f97;
+  --rosa-viare: #d45ca6;
+  --texto-viare: #333333;
+  --blanco: #ffffff;
+  --lila-claro: #caa9eb;
+  --rosa-claro: #f1b9dc;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: var(--texto-viare);
+  background: linear-gradient(
+    135deg,
+    var(--blanco),
+    var(--lila-claro),
+    var(--rosa-claro)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: #5b3f97;
+}
+
+header img {
+  width: 9rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--violeta-viare);
+  font-weight: 600;
+  color: var(--lila-claro);
+}
+
+header nav a:hover {
+  color: var(--rosa-viare);
+}
+
+main {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero,
+.presentacion,
+.nosotros {
+  padding: 7rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--violeta-viare);
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  max-width: 70rem;
+  margin: 0 auto 2rem;
+}
+
+.hero a,
+.paquetes-destacados a {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  text-decoration: none;
+  background-color: var(--violeta-viare);
+  color: var(--blanco);
+  border-radius: 0.8rem;
+}
+
+.hero a:hover {
+  background-color: var(--rosa-viare);
+  border-radius: 0.8rem;
+  padding: 1.2rem 2.5rem;
+}
+
+.paquetes-destacados a,
+.gracias a {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  background-color: var(--violeta-viare);
+  color: var(--blanco);
+  border-radius: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.paquetes-destacados a:hover,
+.gracias a:hover {
+  background-color: var(--rosa-viare);
+}
+
+.destinos,
+.paquetes-destacados,
+.nosotros,
+.nosotros-viajes,
+.beneficios,
+.contacto-form,
+.gracias {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.destinos h2,
+.nosotros-viajes h2,
+.presentacion h1,
+.nosotros h1,
+.categoria-paquetes h2,
+.paquetes-destacados h2,
+.beneficios h2,
+.contacto-form h2,
+.gracias h1 {
+  font-size: 3rem;
+  color: var(--violeta-viare);
+  margin-bottom: 3rem;
+}
+
+.beneficios-contenedor {
+  display: flex;
+  gap: 2rem;
+}
+
+.beneficios-contenedor > div {
+  flex: 1;
+  padding: 2rem;
+}
+
+.beneficios-contenedor h3 {
+  font-size: 2rem;
+  color: var(--violeta-viare);
+  margin-bottom: 1rem;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 2rem;
+}
+
+.tarjetas article {
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tarjetas article img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+}
+
+.tarjetas article h3 {
+  font-size: 2rem;
+  color: var(--violeta-viare);
+  margin-bottom: 1rem;
+}
+
+.tarjetas article p {
+  font-size: 1.4rem;
+}
+
+.categoria-paquetes {
+  padding: 2rem 0;
+  text-align: center;
+}
+.categoria-paquetes img {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.nosotros img {
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  margin-top: 1.5rem;
+}
+
+.tarjetas button {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--violeta-viare);
+  color: var(--blanco);
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.tarjetas button:hover {
+  background-color: var(--rosa-viare);
+  cursor: pointer;
+}
+
+.contacto-form form {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.contacto-form fieldset {
+  padding: 3rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--blanco);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+.contacto-form legend {
+  color: var(--violeta-viare);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form input[type="tel"],
+.contacto-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0 1.5rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+
+.contacto-form label [for="mensaje"] {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-form textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.contacto-form input[type="submit"] {
+  padding: 1rem 2rem;
+  background-color: var(--violeta-viare);
+  color: var(--blanco);
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.contacto-form input[type="submit"]:hover {
+  background-color: var(--rosa-viare);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+  background-color: var(--violeta-viare);
+  color: var(--blanco);
+}
+
+footer a {
+  color: var(--lila-claro);
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+}
